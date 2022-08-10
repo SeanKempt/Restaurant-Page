@@ -14,6 +14,19 @@ body {
     background-color: aquamarine;
     height: 10vh;
     padding-left: 10px;
+    display: flex;
+}
+
+#header ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+    align-items: center;
+}
+
+#header li {
+    margin-left: 50px;
 }
 
 #main {
