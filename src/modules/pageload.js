@@ -5,7 +5,7 @@ function createHeader() {
   header.id = "header";
   //creates restaraunt name
   const title = document.createElement("h1");
-  title.textContent = "Rocket Enchiladas";
+  title.textContent = "Rocket's Cantina";
   header.appendChild(title);
 
   //create navigation for various pages
@@ -25,12 +25,19 @@ function createHeader() {
 
 function createMain() {
   const main = document.createElement("div");
+  const mainBg = document.createElement("div");
+  const mainCard = document.createElement("div");
+  mainBg.id = "main-background";
   main.id = "main";
-  main.appendChild(
+  mainCard.id = "main-card";
+  main.appendChild(mainBg);
+  mainBg.appendChild(
     createParagraph(
-      `We have the best enchiladas in town! So good you'll blast out of your seat!`
+      `We have the best Mexican cuisine in town! So good you'll blast out of your seat!`
     )
   );
+  mainCard.appendChild(createParagraph(`Check out our menu!`));
+  mainBg.appendChild(mainCard);
   return main;
 }
 
