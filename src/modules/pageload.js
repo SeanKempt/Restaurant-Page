@@ -14,8 +14,11 @@ function createHeader() {
   const li1 = document.createElement("li");
   const li2 = document.createElement("li");
   li.textContent = "Home";
+  li.id = "home-nav";
   li1.textContent = "About Us";
+  li1.id = "about-us-nav";
   li2.textContent = "Menu";
+  li2.id = "menu-nav";
   header.appendChild(ul);
   ul.appendChild(li);
   ul.appendChild(li1);
@@ -25,19 +28,7 @@ function createHeader() {
 
 function createMain() {
   const main = document.createElement("div");
-  const mainBg = document.createElement("div");
-  const mainCard = document.createElement("div");
-  mainBg.id = "main-background";
   main.id = "main";
-  mainCard.id = "main-card";
-  main.appendChild(mainBg);
-  mainBg.appendChild(
-    createParagraph(
-      `We have the best Mexican cuisine in town! So good you'll blast out of your seat!`
-    )
-  );
-  mainCard.appendChild(createParagraph(`Check out our menu!`));
-  mainBg.appendChild(mainCard);
   return main;
 }
 
@@ -60,4 +51,4 @@ function intializePage() {
   content.appendChild(createFooter());
 }
 
-export { intializePage };
+export { intializePage, createParagraph };
