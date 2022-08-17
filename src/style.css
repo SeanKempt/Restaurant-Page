@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
 #content {
@@ -69,7 +70,7 @@ body {
 }
 
 #main-card p {
-    font-size: 3vh;
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -85,7 +86,7 @@ body {
 }
 
 #menu-title {
-    font-size:  5vh;
+    font-size:  3rem;
 }
 
 #menu-container {
@@ -93,6 +94,20 @@ body {
     text-align: center;
     display: flex;
 }
+
+#about-us-content {
+    background-color: #f25b0a;
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#about-us-content>p {
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .menu-item-container {
     background-color: #f25b0a;
     margin: 20px;
@@ -102,7 +117,6 @@ body {
 }
 
 .menu-item-container p {
-    font-size: 2vh;
     font-family: 'roboto';
     font-weight: 400;
     padding: 5px;
@@ -111,6 +125,6 @@ body {
 }
 
 .menu-items-names {
-    font-size: 3vh;
+    font-size: 2rem;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.671);
 }
