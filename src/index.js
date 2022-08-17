@@ -29,3 +29,5 @@ const clearPage = () => {
   const main = document.querySelector("#main");
   main.innerHTML = " ";
 };
+
+export { clearPage };
