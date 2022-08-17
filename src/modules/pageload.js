@@ -4,8 +4,9 @@ function createHeader() {
   const header = document.createElement("div");
   header.id = "header";
   //creates restaraunt name
-  const title = document.createElement("h1");
+  const title = document.createElement("p");
   title.textContent = "Rocket's Cantina";
+  title.id = "title";
   header.appendChild(title);
 
   //create navigation for various pages
